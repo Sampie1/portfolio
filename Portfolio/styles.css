@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* nav */
+nav{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+}
+
+.navbar-brand{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 40px 25px 50px;
+}
+
+.nav-link{
+    padding: 0 50px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #000;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+/* about */
+
+.about-h{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #2d2e32;
+}
+
+.about-h h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.about-h h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row{
+    --bs-gutter-x: -1.5rem;
+}
+
+.col{
+   /*border: 1px solid;*/
+}
+
+.col-p{
+    margin-top: 45px;
+}
+
+.container-about{
+    margin-top: 175px;
+    margin-bottom: 175px;
+}
+
+.container-about p{
+    font-size: small;
+}
+
+.overmij-img{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 3px solid;
+    margin-top: 2%;
+}
+
+
+/*Projecten*/
+.mijn-projecten-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0 25px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f77335;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mijn-cv-button{
+    height: 44px;
+    width: 151px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0 25px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f77335;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mijn-projecten-button:hover {
+    background-color: #fd5000;
+    color: #eeeeee;
+}
+
+.mijn-cv-button:hover {
+    background-color: #fd5000;
+    color: #eeeeee;
+}
+
+.projecten-h3-jaar1{
+    display: block;
+    text-align: center;
+}
+
+.projecten-h3-jaar1 h3{
+    font-weight: 680;
+    font-size: 28px;
+}
+
+.projecten-h3-jaar2{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projecten-h3-jaar2 h3{
+    font-weight: 680;
+    font-size: 28px;
+}
+
+.coming-soon{
+    display: flex;
+    justify-content: center;
+}
+
+
+.col-lg-3, .col-md-4, .col-sm-6, .col-12 {
+    margin: 25px;
+    
+}
+
+.card{
+    height: 100%;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.btn-primary{
+    display: block;
+    background-color: #f77335;
+    --bs-btn-border-color: #fff !important;
+}
+
+.btn-primary:hover{
+    background-color: #fd5000;
+    --bs-btn-border-color: #fff !important;
+}
+
+/* Meer lezen knop */
+.hidden {
+    display: none;
+  }
+  
+  #toggleButton {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  #toggleButton:hover {
+    color: #0056b3;
+  }
+  
+
+.skills-section{
+    background-color: #fff;
+}
+
+.skill-imgs{
+    width: 60px;
+    height: 60px;
+}
+
+.skills-section h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 680;
+    font-size: 28px;
+}
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint{
+    max-width: 34.15em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.checkpoint div{
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.checkpoint p{
+    line-height: 27px;
+}
+
+.checkpoint:nth-child(odd){
+    border-left: 3px solid #888;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even){
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content: '';
+    background: #fd5000;
+    box-shadow: 0 0 0.5em #fc450d;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+    right: -0.5em;
+}
+
+/*Overlay*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px); /* Blur effect */
+    z-index: 998;
+    display: none;
+  }
+  
+  /*zorgt er voor dat de card boven de overlay komt*/
+  .card.active {
+    position: relative;
+    z-index: 999; /*boven de overlay*/
+  }
+  
+  .hidden-text {
+    display: none;
+  }
+  
+  #moreText.visible {
+    display: inline;
+  }
+
+  .contact{
+    background-color: #fff;
+  }
+
+  .contact-p{
+    margin-bottom: 25px;
+    padding-top: 20px;
+
+  }
+
+  .h4-contact{
+    color: #f77335;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+
+.container-contact{
+    margin-top: 20px;
+}
+  
+  .contact-p{
+    text-align: center;
+    color: #f77335;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+
+@media screen and (max-width: 1416px) {
+    .overmij-img{
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 1383px) {
+    .overmij-img{
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .overmij-img{
+        margin-top: 9%;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+    .overmij-img{
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .overmij-img{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .overmij-img{
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .overmij-img{
+        margin-top: 21%;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .container-about .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container-about{
+        margin-top: 75px;
+        margin-bottom: 75px;
+      }
+      
+      .about-col {
+        order: 1;
+      }
+    
+      .overmij-img {
+        display: block;
+        margin: 0 auto;
+        order: 2;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+        .overmij-img{
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    @media screen and (max-width: 478px) {
+        .overmij-img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        .timeline {
+            width: 80vw;
+        }
+
+        .timeline .checkpoint {
+            width: 100%;
+            transform: none;
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+        }
+
+        .timeline .checkpoint::before {
+            width: 3px;
+            height: 4em;
+            top: -2em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline .checkpoint div::before {
+            top: -0.5em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media only screen and (max-width: 644px) {
+        .container-contact {
+            flex-direction: column;
+        }
+        
+        .col {
+            flex: 1 1 100%;
+            margin-top: 20px;
+        }
+
+        .contact-p{
+            margin-bottom: 0;
+        }
+    }
